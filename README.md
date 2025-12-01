@@ -1,2 +1,6 @@
 # BRGC2400
-a small visualization of the binary reflected Gray code. I wrote a Python script that generates the Gray code for a chosen number of bits and then displays it in an animated grid using matplotlib.
+I made a small Python program that shows the binary reflected Gray code being generated step by step. I used matplotlib to make a simple animation where each new Gray code appears on its own row. The grid updates one frame at a time so you can actually watch the sequence build from top to bottom.
+
+Every time a new code shows up, the bit that changes from the previous code is highlighted in a different color. That makes it easy to see the main property of Gray code, which is that only one bit should change between consecutive values. The animation also keeps earlier rows visible in a lighter color so you can compare them as it goes.
+
+I wrote the Gray code generation myself. For the animation part, I used GenAI (ChatGPT) to help figure out the frame-by-frame update setup in matplotlib because I had never made this kind of visualization before. The final script runs as a normal Python file, opens a window, and plays through the full sequence. I recorded a short screen capture of it running to show how it works.
